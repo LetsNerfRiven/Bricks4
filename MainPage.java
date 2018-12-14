@@ -1,0 +1,26 @@
+package Bricks4;
+
+import java.io.IOException;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class MainPage extends Application {
+	  
+public static void main(String[] args) {
+	        launch(args);
+	    }
+	//simple stage setting
+public void start (Stage primaryStage) throws IOException{                                                                                                                                                                                                                                                                                                    
+	        
+	        Parent root;
+    root = FXMLLoader.load(getClass().getResource("/bricks4/Main.fxml"));
+			Scene scene = new Scene(root);
+	        primaryStage.setTitle("Order Your Bricks"); 
+	        primaryStage.setScene(scene); 
+	        primaryStage.show(); 
+}
+}

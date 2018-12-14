@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bricks4.ReceiptPageController">
+   <children>
+      <TableView fx:id="tableView" editable="true" layoutX="281.0" layoutY="44.0" prefHeight="428.0" prefWidth="438.0">
+        <columns>
+          <TableColumn fx:id="orderItemColumn" prefWidth="225.0" text="ORDER ITEM" />
+          <TableColumn fx:id="quantityColumn" prefWidth="75.0" text="QUANTITY" />
+            <TableColumn fx:id="priceColumn" prefWidth="137.0" text="PRICE" />
+        </columns>
+      </TableView>
+      <Label fx:id="receiptLabel" layoutX="461.0" layoutY="14.0" text="RECEIPT">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Total" layoutX="599.0" layoutY="485.0" prefHeight="25.0" prefWidth="120.0" />
+      <Label fx:id="totalLabel" layoutX="475.0" layoutY="489.0" text="TOTAL  (in Dollars)" />
+      <Button fx:id="proceedBtn" layoutX="599.0" layoutY="521.0" mnemonicParsing="false" onAction="#payment" prefHeight="25.0" prefWidth="120.0" text="PROCEED &gt;" />
+      <Button fx:id="exitBtn" layoutX="281.0" layoutY="521.0" mnemonicParsing="false" onAction="#closeAction" prefHeight="25.0" prefWidth="120.0" text="EXIT" />
+      <Button fx:id="backBtn" layoutX="464.0" layoutY="521.0" mnemonicParsing="false" onAction="#backBtn" prefHeight="25.0" prefWidth="120.0" text="&lt; BACK" />
+      <Button fx:id="DeleteBtn" layoutX="281.0" layoutY="485.0" mnemonicParsing="false" onAction="#deleteButtonPushed" prefHeight="25.0" prefWidth="120.0" text="DELETE" />
+   </children>
+</AnchorPane>
